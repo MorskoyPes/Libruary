@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+	{% for product in products %}
+	    <div> Name: {{ product.name }}</div>
+		<div> Year: {{ product.year }}</div>
+		<div> Author: {{ product.author }}</div>
+	    <a href="/product/edit/{{ product.id }}">-->Edit<--</a>
+	    </br></br>
+	{% endfor %}
+
+{% endblock %}

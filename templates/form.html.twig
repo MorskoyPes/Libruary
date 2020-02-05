@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    {{ form_start(form) }}
+    {{ form_row(form.name) }}
+    {{ form_row(form.year) }}
+    {{ form_row(form.author) }}
+    </br>
+    <input type = "submit" name = "submit" value = "Save"></br></br>
+    <a href="/product">-->Books list <--</a>
+    {{ form_end(form) }}
+{% endblock %}
